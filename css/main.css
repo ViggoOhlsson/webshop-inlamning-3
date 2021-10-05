@@ -1,9 +1,7 @@
-@use 'mixins';
-@use 'variables';
 body {
   font-family: 'Montserrat', sans-serif; }
 
 header {
   display: flex;
-  height: 75px; 
-}
+  height: 75px;
+  background-color: #4ECDC4; }
