@@ -1,4 +1,6 @@
 @use 'mixins';
+@use 'variables';
+
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -8,5 +10,6 @@ body {
 header {
     display: flex;
     height: 75px;
+    background-color: variables.$color-teal;
     
 }
