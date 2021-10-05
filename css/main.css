@@ -4,6 +4,37 @@ body {
   padding: 0; }
 
 header {
+  position: relative;
   display: flex;
   height: 75px;
-  background-color: #4ECDC4; }
+  align-items: center;
+  background-color: #292F36;
+  color: #FFFFFF; }
+
+.menu-button {
+  border: none;
+  margin: 10px 10px;
+  font-size: 2rem;
+  background: none;
+  color: #FFFFFF; }
+  .menu-button:hover {
+    color: #4ECDC4; }
+  .menu-button:active + .menu-button > .header-dropdown {
+    visibility: visible;
+    opacity: 1; }
+
+.header-dropdown {
+  visibility: hidden;
+  opacity: 0;
+  width: 100%;
+  position: absolute;
+  top: 75px;
+  background-color: #FF6B6B; }
+
+.header-row {
+  margin: 15px; }
+
+.site-title {
+  justify-self: center;
+  font-size: 2rem;
+  font-weight: bold; }
