@@ -1,9 +1,12 @@
 @use 'mixins';
+@use 'variables';
+
 body {
     font-family: 'Montserrat', sans-serif;
 }
 header {
     display: flex;
     height: 75px;
+    background-color: variables.$color-teal;
     
 }
