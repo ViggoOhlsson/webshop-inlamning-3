@@ -26,14 +26,9 @@ header {
     &:hover {
         color: $color-teal;
     }
-    &:active + .menu-button > .header-dropdown {
-        visibility: visible;
-        opacity: 1;
-    }
 }
 .header-dropdown {
     visibility: hidden;
-    opacity: 0;
     width: 100%;
     position: absolute;
     top: 75px;
