@@ -45,12 +45,13 @@ header {
   background-color: $color-salmon;
 }
 .dropdown-row {
-  margin: 15px 30px;
+  padding: 10px 30px;
   font-size: 1.5rem;
   &:hover {
     text-decoration: underline;
     cursor: pointer;
-  }
+    background-color: rgba(0, 0, 0, 0.1)
+    }
 }
 .socials-wrapper {
   display: flex;
