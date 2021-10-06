@@ -53,3 +53,8 @@ header {
   .socials-wrapper i:hover {
     color: #4ECDC4;
     cursor: pointer; }
+
+.site-title {
+  justify-self: center;
+  font-size: 2rem;
+  font-weight: bold; }

@@ -1,32 +1,30 @@
-@import 'mixins';
-@import 'variables';
+@import "mixins";
+@import "variables";
 
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
     color: $color-light;
-
 }
 
 header {
-    position:relative;
-    display: flex;
-    height: 75px;
-    align-items: center;
-    background-color: $color-dark;
-    color: $color-light;
-    
+  position: relative;
+  display: flex;
+  height: 75px;
+  align-items: center;
+  background-color: $color-dark;
+  color: $color-light;
 }
 .menu-button {
-    border: none;
-    margin: 10px 10px;
-    font-size: 2rem;
-    background: none;
-    color: $color-light;
-    &:hover {
-        color: $color-teal;
-    }
+  border: none;
+  margin: 10px 10px;
+  font-size: 2rem;
+  background: none;
+  color: $color-light;
+  &:hover {
+    color: $color-teal;
+  }
 }
 .site-title {
     font-size: 2rem;
@@ -40,19 +38,19 @@ header {
     }
 }
 .header-dropdown {
-    visibility: hidden;
-    width: 100%;
-    position: absolute;
-    top: 75px;
-    background-color: $color-salmon;
+  visibility: hidden;
+  width: 100%;
+  position: absolute;
+  top: 75px;
+  background-color: $color-salmon;
 }
 .dropdown-row {
-    margin: 15px 30px;
-    font-size: 1.5rem;
-    &:hover {
-        text-decoration: underline;
-        cursor: pointer;
-    }
+  margin: 15px 30px;
+  font-size: 1.5rem;
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
 }
 .socials-wrapper {
     display: flex;
@@ -64,5 +62,8 @@ header {
         cursor: pointer;
     }
 }
-
-
+.site-title {
+  justify-self: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
