@@ -27,8 +27,12 @@ header {
   top: 75px;
   background-color: #FF6B6B; }
 
-.header-row {
-  margin: 15px; }
+.dropdown-row {
+  margin: 15px 30px;
+  font-size: 1.5rem; }
+  .dropdown-row:hover {
+    text-decoration: underline;
+    cursor: pointer; }
 
 .site-title {
   justify-self: center;

@@ -6,4 +6,3 @@ function toggleDropdown() {
       x.style.visibility = "visible";
     }
   }
-  alert('js aktivt');

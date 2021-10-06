@@ -34,12 +34,18 @@ header {
     top: 75px;
     background-color: $color-salmon;
 }
-.header-row {
-    margin: 15px;
+.dropdown-row {
+    margin: 15px 30px;
+    font-size: 1.5rem;
+    &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
 }
 .site-title {
     justify-self: center;
     font-size: 2rem;
     font-weight: bold;
 }
+
 
