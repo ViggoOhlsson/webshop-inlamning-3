@@ -1,5 +1,5 @@
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0; }
 
@@ -38,3 +38,9 @@ header {
   justify-self: center;
   font-size: 2rem;
   font-weight: bold; }
+
+.footer-row {
+  margin: 20px;
+  text-align: center; }
+  .footer-row .fab {
+    font-size: 30px; }
