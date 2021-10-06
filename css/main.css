@@ -19,20 +19,20 @@ header {
   color: #FFFFFF; }
   .menu-button:hover {
     color: #4ECDC4; }
-  .menu-button:active + .menu-button > .header-dropdown {
-    visibility: visible;
-    opacity: 1; }
 
 .header-dropdown {
   visibility: hidden;
-  opacity: 0;
   width: 100%;
   position: absolute;
   top: 75px;
   background-color: #FF6B6B; }
 
-.header-row {
-  margin: 15px; }
+.dropdown-row {
+  margin: 15px 30px;
+  font-size: 1.5rem; }
+  .dropdown-row:hover {
+    text-decoration: underline;
+    cursor: pointer; }
 
 .site-title {
   justify-self: center;

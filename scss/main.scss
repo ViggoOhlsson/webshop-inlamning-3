@@ -24,33 +24,24 @@ header {
   &:hover {
     color: $color-teal;
   }
-  &:active + .menu-button > .header-dropdown {
-    visibility: visible;
-    opacity: 1;
-  }
 }
 .header-dropdown {
   visibility: hidden;
-  opacity: 0;
   width: 100%;
   position: absolute;
   top: 75px;
   background-color: $color-salmon;
 }
-.header-row {
-  margin: 15px;
+.dropdown-row {
+  margin: 15px 30px;
+  font-size: 1.5rem;
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
 }
 .site-title {
   justify-self: center;
   font-size: 2rem;
   font-weight: bold;
-}
-
-.footer-row {
-  margin: 20px;
-  text-align: center;
-
-  .fab {
-    font-size: 30px;
-  }
 }
