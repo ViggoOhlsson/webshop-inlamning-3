@@ -5,6 +5,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
+    color: $color-light;
 
 }
 
@@ -27,6 +28,17 @@ header {
         color: $color-teal;
     }
 }
+.site-title {
+    font-size: 2rem;
+    font-weight: bold;
+    flex-grow: 1;
+    color: $color-light;
+    text-decoration: none;
+    &:hover{
+        color: $color-light;
+        cursor: pointer;
+    }
+}
 .header-dropdown {
     visibility: hidden;
     width: 100%;
@@ -42,10 +54,15 @@ header {
         cursor: pointer;
     }
 }
-.site-title {
-    justify-self: center;
+.socials-wrapper {
+    display: flex;
     font-size: 2rem;
-    font-weight: bold;
+    gap: 20px;
+    margin: 0 20px;
+    i:hover {
+        color: $color-teal;
+        cursor: pointer;
+    }
 }
 
 
