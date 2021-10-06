@@ -48,7 +48,7 @@ header {
 
 .socials-wrapper {
   display: flex;
-  font-size: 2rem;
+  font-size: 1.5rem;
   gap: 20px;
   margin: 0 20px; }
   .socials-wrapper i:hover {
