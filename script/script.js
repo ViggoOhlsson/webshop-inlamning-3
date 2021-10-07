@@ -1,8 +1,8 @@
 function toggleDropdown() {
-    var x = document.getElementById("dropDown");
-    if (x.style.visibility === "visible") {
-      x.style.visibility = "hidden";
+    var dropDown = document.getElementById("dropDown");
+    if (dropDown.style.visibility === "visible") {
+      dropDown.style.visibility = "hidden";
     } else {
-      x.style.visibility = "visible";
+      dropDown.style.visibility = "visible";
     }
   }

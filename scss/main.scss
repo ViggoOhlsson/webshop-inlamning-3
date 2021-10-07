@@ -5,6 +5,7 @@ body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
+  color: $color-light;
 }
 
 header {
@@ -25,6 +26,17 @@ header {
     color: $color-teal;
   }
 }
+.site-title {
+  font-size: 2rem;
+  font-weight: bold;
+  flex-grow: 1;
+  color: $color-light;
+  text-decoration: none;
+  &:hover {
+    color: $color-light;
+    cursor: pointer;
+  }
+}
 .header-dropdown {
   visibility: hidden;
   width: 100%;
@@ -33,10 +45,21 @@ header {
   background-color: $color-salmon;
 }
 .dropdown-row {
-  margin: 15px 30px;
+  padding: 10px 30px;
   font-size: 1.5rem;
   &:hover {
     text-decoration: underline;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.1)
+    }
+}
+.socials-wrapper {
+  display: flex;
+  font-size: 1.5rem;
+  gap: 20px;
+  margin: 0 20px;
+  i:hover {
+    color: $color-teal;
     cursor: pointer;
   }
 }
