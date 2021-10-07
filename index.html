@@ -1,136 +1,458 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Webshop</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"/>
-    <script src="https://kit.fontawesome.com/3d16140dea.js" crossorigin="anonymous"></script>
-    <link href="css/main.css" rel="stylesheet" />
-  </head>
-  <body>
-    <header>
-      <button class="menu-button" onclick="toggleDropdown()">
-        <i class="fas fa-bars"></i>
-      </button>
-      <span class="site-title">klädera</span>
-      <span class="socials-wrapper"><i class='fab fa-instagram'></i><i class='fab fa-twitter'></i><i class='fab fa-snapchat'></i></span>
-      <div id="dropDown" class="header-dropdown">
-        <div class="dropdown-row">
-          <span>Vuxen</span>
-        </div>
-        <div class="dropdown-row">
-          <span>Accessoarer</span>
-        </div>
-        <div class="dropdown-row">
-          <span>Barn</span>
-        </div>
-        <div class="dropdown-row">
-          <span>Baby</span>
-        </div>
-        <div class="dropdown-row">
-          <span>REA</span>
-        </div>
-        <div class="dropdown-row">
-          <span>About</span>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Webshop</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/3d16140dea.js" crossorigin="anonymous"></script>
+  <link href="css/main.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <button class="menu-button" onclick="toggleDropdown()">
+      <i class="fas fa-bars"></i>
+    </button>
+    <span class="site-title">klädera</span>
+    <span class="socials-wrapper"><i class='fab fa-instagram'></i><i class='fab fa-twitter'></i><i
+        class='fab fa-snapchat'></i></span>
+    <div id="dropDown" class="header-dropdown">
+      <div class="dropdown-row">
+        <span>Vuxen</span>
       </div>
-    </header>
-    <main></main>
-    <footer class="text-center text-lg-start bg-light text-muted">
-      <!-- Section: Links  -->
-      <section class="">
-        <div class="container text-center text-md-start mt-5">
-          <!-- Grid row -->
-          <div class="row mt-3">
-            <!-- Grid column -->
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4"></div>
-            <!-- Grid column -->
+      <div class="dropdown-row">
+        <span>Accessoarer</span>
+      </div>
+      <div class="dropdown-row">
+        <span>Barn</span>
+      </div>
+      <div class="dropdown-row">
+        <span>Baby</span>
+      </div>
+      <div class="dropdown-row">
+        <span>REA</span>
+      </div>
+      <div class="dropdown-row">
+        <span>About</span>
+      </div>
+    </div>
+  </header>
+  <main class="main-content">
+    <div class="hero">
+      <div class="hero-text">
+        <h2>Höstens snyggaste ytterplagg</h2>
+        <a href="">
+          <p>Bli inspirerad här</p>
+        </a>
+      </div>
+    </div>
 
-            <!-- Grid column -->
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-              <!-- Links -->
-              <h6 class="text-uppercase fw-bold mb-4">Produkter</h6>
-              <p>
-                <a href="#!" class="text-reset">Toppar</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">Byxor</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">Accessoarer</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">Jackor</a>
-              </p>
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-              <!-- Links -->
-              <h6 class="text-uppercase fw-bold mb-4">Genvägar</h6>
-              <p>
-                <a href="#!" class="text-reset">Hem</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">Varukorg</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">Hem</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">Hjälp</a>
-              </p>
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-              <!-- Links -->
-              <h6 class="text-uppercase fw-bold mb-4">Kontakt</h6>
-              <p>
-                <i class="fas fa-home me-3"></i>Bromma, Gustavslundsvägen 151
-              </p>
-              <p>
-                <i class="fas fa-envelope me-3"></i>
-                info@kladera.se
-              </p>
-              <p><i class="fas fa-phone me-3"></i> +46 842 95 00</p>
-            </div>
-            <!-- Grid column -->
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4"></div>
+    <div class="grid-container">
+      <div class="grid-products">
+        <a href="">
+          <div class="product-card">
+            <figure>
+              <img src="images/product-images/junkyard-fiercefleece.jpg" alt="">
+              <figcaption>
+                <h4>Tröja - Fierce Fleece</h4>
+                <h4>499:-</h4>
+                <h5>Färg: Grön</h5>
+                </fig>
+            </figure>
           </div>
-          <!-- Grid row -->
+        </a>
+        <a href="">
+          <div class="product-card">
+            <figure>
+              <img src="images/product-images/vans-mallaround.jpg" alt="">
+              <figcaption>
+                <h4>Tröja - Fierce Fleece</h4>
+                <h4>499:-</h4>
+                <h5>Färg: Grön</h5>
+                </fig>
+            </figure>
+          </div>
+        </a>
+        <a href="">
+          <div class="product-card">
+            <figure>
+              <img src="images/product-images/carhartt-burbankbeanie.jpg" alt="">
+              <figcaption>
+                <h4>Tröja - Fierce Fleece</h4>
+                <h4>499:-</h4>
+                <h5>Färg: Grön</h5>
+                </fig>
+            </figure>
+          </div>
+        </a>
+        <a href="">
+          <div class="product-card">
+            <figure>
+              <img src="images/product-images/chpo-guelasblack-junkyard.jpg" alt="">
+              <figcaption>
+                <h4>Tröja - Fierce Fleece</h4>
+                <h4>499:-</h4>
+                <h5>Färg: Grön</h5>
+                </fig>
+            </figure>
+          </div>
+        </a>
+      </div>
+
+      <div class="grid-products">
+        <a href="">
+          <div class="product-card">
+            <figure>
+              <img src="images/product-images/junkyard-clearview.jpg" alt="">
+              <figcaption>
+                <h4>Tröja - Fierce Fleece</h4>
+                <h4>499:-</h4>
+                <h5>Färg: Grön</h5>
+                </fig>
+            </figure>
+          </div>
+        </a>
+        <a href="">
+          <div class="product-card">
+            <figure>
+              <img src="images/product-images/junkyard-hoodie-dkred.jpg" alt="">
+              <figcaption>
+                <h4>Tröja - Fierce Fleece</h4>
+                <h4>499:-</h4>
+                <h5>Färg: Grön</h5>
+                </fig>
+            </figure>
+          </div>
+
+        </a>
+        <a href="">
+          <div class="product-card">
+            <figure>
+              <img src="images/product-images/junkyard-jeans-nevermind-beige.jpg" alt="">
+              <figcaption>
+                <h4>Tröja - Fierce Fleece</h4>
+                <h4>499:-</h4>
+                <h5>Färg: Grön</h5>
+                </fig>
+            </figure>
+          </div>
+
+        </a>
+        <a href="">
+          <div class="product-card">
+            <figure>
+              <img src="images/product-images/junkyard-jeans-nevermind-black.jpg" alt="">
+              <figcaption>
+                <h4>Tröja - Fierce Fleece</h4>
+                <h4>499:-</h4>
+                <h5>Färg: Grön</h5>
+                </fig>
+            </figure>
+          </div>
+        </a>
+      </div>
+
+      <div class="grid-products">
+        <a href="">
+          <div class="product-card">
+            <figure>
+              <img src="images/product-images/junkyard-jeans-nevermind-blue.jpg" alt="">
+              <figcaption>
+                <h4>Tröja - Fierce Fleece</h4>
+                <h4>499:-</h4>
+                <h5>Färg: Grön</h5>
+                </fig>
+            </figure>
+          </div>
+        </a>
+        <a href="">
+          <div class="product-card">
+            <figure>
+              <img src="images/product-images/junkyard-multiverse-grey.jpg" alt="">
+              <figcaption>
+                <h4>Tröja - Fierce Fleece</h4>
+                <h4>499:-</h4>
+                <h5>Färg: Grön</h5>
+                </fig>
+            </figure>
+          </div>
+        </a>
+        <a href="">
+          <div class="product-card">
+            <figure>
+              <img src="images/product-images/junkyard-multiverse-purple.jpg" alt="">
+              <figcaption>
+                <h4>Tröja - Fierce Fleece</h4>
+                <h4>499:-</h4>
+                <h5>Färg: Grön</h5>
+                </fig>
+            </figure>
+          </div>
+        </a>
+        <a href="">
+          <div class="product-card">
+            <figure>
+              <img src="images/product-images/junkyard-super-tee-black.jpg" alt="">
+              <figcaption>
+                <h4>Tröja - Fierce Fleece</h4>
+                <h4>499:-</h4>
+                <h5>Färg: Grön</h5>
+                </fig>
+            </figure>
+          </div>
+        </a>
+      </div>
+
+      <div class="grid-products">
+        <a href="">
+          <div class="product-card">
+            <figure>
+              <img src="images/product-images/junkyard-super-tee-white.jpg" alt="">
+              <figcaption>
+                <h4>Tröja - Fierce Fleece</h4>
+                <h4>499:-</h4>
+                <h5>Färg: Grön</h5>
+                </fig>
+            </figure>
+          </div>
+        </a>
+        <a href="">
+          <div class="product-card">
+            <figure>
+              <img src="images/product-images/komono-ethangrandbourbon.jpg" alt="">
+              <figcaption>
+                <h4>Tröja - Fierce Fleece</h4>
+                <h4>499:-</h4>
+                <h5>Färg: Grön</h5>
+                </fig>
+            </figure>
+          </div>
+        </a>
+        <a href="">
+          <div class="product-card">
+            <figure>
+              <img src="images/product-images/sandqvist-roald.jpg" alt="">
+              <figcaption>
+                <h4>Tröja - Fierce Fleece</h4>
+                <h4>499:-</h4>
+                <h5>Färg: Grön</h5>
+                </fig>
+            </figure>
+          </div>
+        </a>
+        <a href="">
+          <div class="product-card">
+            <figure>
+              <img src="images/product-images/sweetsktbs-hoodie.jpg" alt="">
+              <figcaption>
+                <h4>Tröja - Fierce Fleece</h4>
+                <h4>499:-</h4>
+                <h5>Färg: Grön</h5>
+                </fig>
+            </figure>
+          </div>
+        </a>
+      </div>
+
+      <div class="grid-products">
+        <a href="">
+          <div class="product-card">
+            <figure>
+              <img src="images/product-images/sweetsktbs-sweetbigskate-black.jpg" alt="">
+              <figcaption>
+                <h4>Tröja - Fierce Fleece</h4>
+                <h4>499:-</h4>
+                <h5>Färg: Grön</h5>
+                </fig>
+            </figure>
+          </div>
+        </a>
+        <a href="">
+          <div class="product-card">
+            <figure>
+              <img src="images/product-images/sweetsktbs-sweetbigskate-blue.jpg" alt="">
+              <figcaption>
+                <h4>Tröja - Fierce Fleece</h4>
+                <h4>499:-</h4>
+                <h5>Färg: Grön</h5>
+                </fig>
+            </figure>
+          </div>
+        </a>
+        <a href="">
+          <div class="product-card">
+            <figure>
+              <img src="images/product-images/sweetsktbs-sweetbigskate.jpg" alt="">
+              <figcaption>
+                <h4>Tröja - Fierce Fleece</h4>
+                <h4>499:-</h4>
+                <h5>Färg: Grön</h5>
+                </fig>
+            </figure>
+          </div>
+
+        </a>
+        <a href="">
+          <div class="product-card">
+            <figure>
+              <img src="images/product-images/sweetsktbs-sweetloose-tee-stripe.jpg" alt="">
+              <figcaption>
+                <h4>Tröja - Fierce Fleece</h4>
+                <h4>499:-</h4>
+                <h5>Färg: Grön</h5>
+                </fig>
+            </figure>
+          </div>
+        </a>
+
+        <div class="grid-products">
+          <a href="">
+            <div class="product-card">
+              <figure>
+                <img src="images/product-images/thrasher-gonzsadlogo-beanie.jpg" alt="">
+                <figcaption>
+                  <h4>Tröja - Fierce Fleece</h4>
+                  <h4>499:-</h4>
+                  <h5>Färg: Grön</h5>
+                  </fig>
+              </figure>
+            </div>
+
+          </a>
+          <a href="">
+            <div class="product-card">
+              <figure>
+                <img src="images/product-images/vans-curvedbil.jpg" alt="">
+                <figcaption>
+                  <h4>Tröja - Fierce Fleece</h4>
+                  <h4>499:-</h4>
+                  <h5>Färg: Grön</h5>
+                  </fig>
+              </figure>
+            </div>
+          </a>
+          <a href="">
+            <div class="product-card">
+              <figure>
+                <img src="images/product-images/sweetsktbs-sweetloosesurfer-beige.jpg" alt="">
+                <figcaption>
+                  <h4>Tröja - Fierce Fleece</h4>
+                  <h4>499:-</h4>
+                  <h5>Färg: Grön</h5>
+                  </fig>
+              </figure>
+            </div>
+          </a>
+          <a href="">
+            <div class="product-card">
+              <figure>
+                <img src="images/product-images/sweetsktbs-sweetloosesurfer-black.jpg" alt="">
+                <figcaption>
+                  <h4>Tröja - Fierce Fleece</h4>
+                  <h4>499:-</h4>
+                  <h5>Färg: Grön</h5>
+                  </fig>
+              </figure>
+            </div>
         </div>
-      </section>
-      <!-- Section: Links  -->
-      <!-- Section: Social media -->
-      <div class="row-center" style="text-align: center">
-        <h4>Följ oss:</h4>
       </div>
-      <div class="row-center" style="text-align: center">
-        <a href="" class="me-4 text-reset">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="" class="me-4 text-reset">
-          <i class="fab fa-instagram"></i>
-        </a>
+    </div>
+  </main>
+  <footer class="text-center text-lg-start bg-light text-muted">
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4"></div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Produkter</h6>
+            <p>
+              <a href="#!" class="text-reset">Toppar</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Byxor</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Accessoarer</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Jackor</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Genvägar</h6>
+            <p>
+              <a href="#!" class="text-reset">Hem</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Varukorg</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Hem</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Hjälp</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Kontakt</h6>
+            <p>
+              <i class="fas fa-home me-3"></i>Bromma, Gustavslundsvägen 151
+            </p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              info@kladera.se
+            </p>
+            <p><i class="fas fa-phone me-3"></i> +46 842 95 00</p>
+          </div>
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4"></div>
+        </div>
+        <!-- Grid row -->
       </div>
-      <!-- Section: Social media -->
-      <!-- Copyright -->
-      <div
-        class="text-center p-4"
-        style="background-color: rgba(0, 0, 0, 0.05)"
-      >
-        <p>KLÄDERA AB © All rights reserved</p>
-      </div>
-      <!-- Copyright -->
-    </footer>
-  </body>
-  <script src="script/script.js"></script>
+    </section>
+    <!-- Section: Links  -->
+    <!-- Section: Social media -->
+    <div class="row-center" style="text-align: center">
+      <h4>Följ oss:</h4>
+    </div>
+    <div class="row-center" style="text-align: center">
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+    <!-- Section: Social media -->
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05)">
+      <p>KLÄDERA AB © All rights reserved</p>
+    </div>
+    <!-- Copyright -->
+  </footer>
+</body>
+<script src="script/script.js"></script>
+
 </html>
