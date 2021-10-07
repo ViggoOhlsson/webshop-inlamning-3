@@ -6,6 +6,7 @@ body {
   margin: 0;
   padding: 0;
   color: $color-light;
+  font-size: 12pt;
 }
 
 header {
@@ -136,6 +137,8 @@ figure {
   }
 }
 
+
+
 h4,
 h5 {
   margin: 2px;
@@ -169,30 +172,29 @@ h5 {
   .hero-text {
     text-align: center;
     color: #fff;
-    padding: 150px 0px 20px;
-
-    h2,
-    p {
-      margin: 5px;
-    }
+    padding: 160px 0px 30px;
   }
 }
 
-.hero-text a {
-  color: white;
+.hero h2 {
+  font-size: 1.5rem;
 }
 
 .btn {
   border-radius: 20px;
   font-weight: 700;
+  font-size: 0.7rem;
   color: rgb(0, 0, 0);
-  padding: 10px;
-  width: 150px;
-  height: 50px;
+  width: 115px;
+  height: 30px;
+  margin-top: 5px;
   background-color: $color-salmon;
 
   &:hover {
     cursor: pointer;
+    opacity: 0.9;
+    transform: translateY(-2px);
+    transition: transform 0.4s;
   }
 }
 
@@ -223,10 +225,19 @@ h5 {
 
   .hero-text h2 {
     font-size: 3.3rem;
- 
+
 
     .hero-text p {
       font-size: 1.2rem;
     }
+  }
+
+  .btn {
+    font-size: 1.1rem;
+    border-radius: 20px;
+    padding: 10px;
+    width: 160px;
+    height: 50px;
+    margin-top: 20px;
   }
 }
