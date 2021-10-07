@@ -131,7 +131,7 @@ h5 {
 
 .hero {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), black), url("../assets/images/hero.jpg");
-  background-position: bottom center;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
