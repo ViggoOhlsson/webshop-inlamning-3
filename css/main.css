@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth; }
+
 body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
@@ -17,7 +20,8 @@ header {
   margin: 10px 10px;
   font-size: 2rem;
   background: none;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  transition: color 0.05s ease-in-out; }
   .menu-button:hover {
     color: #4ECDC4; }
 
@@ -36,7 +40,8 @@ header {
   width: 100%;
   position: absolute;
   top: 75px;
-  background-color: #FF6B6B; }
+  background-color: #FF6B6B;
+  z-index: 1; }
 
 .dropdown-row {
   padding: 10px 30px;
@@ -118,11 +123,9 @@ h5 {
 
 .hero {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), black), url("../assets/images/hero.jpg");
-  height: 100%;
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
