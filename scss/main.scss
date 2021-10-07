@@ -255,3 +255,16 @@ h5 {
     }
   }
 }
+::-webkit-scrollbar {
+  width: 10px;
+
+}
+
+::-webkit-scrollbar-track {
+  background: $color-dark;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $color-darkteal;
+  opacity: 0.5;
+}
