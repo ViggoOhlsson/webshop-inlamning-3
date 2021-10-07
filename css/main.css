@@ -13,11 +13,12 @@ header {
   height: 75px;
   align-items: center;
   background-color: #292F36;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  opacity: 0.95; }
 
 .menu-button {
   border: none;
-  margin: 10px 10px;
+  margin: 0 10px;
   font-size: 2rem;
   background: none;
   color: #FFFFFF;
@@ -26,6 +27,7 @@ header {
     color: #4ECDC4; }
 
 .site-title {
+  margin: 0 10px;
   font-size: 2rem;
   font-weight: bold;
   flex-grow: 1;
@@ -36,6 +38,8 @@ header {
     cursor: pointer; }
 
 .header-dropdown {
+  display: flex;
+  flex-direction: column;
   visibility: hidden;
   width: 100%;
   position: absolute;
@@ -45,11 +49,15 @@ header {
 
 .dropdown-row {
   padding: 10px 30px;
-  font-size: 1.5rem; }
+  font-size: 1.3rem;
+  white-space: nowrap; }
   .dropdown-row:hover {
     text-decoration: underline;
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.1); }
+  .dropdown-row a {
+    color: #FFFFFF;
+    text-decoration: none; }
 
 .socials-wrapper {
   display: flex;
@@ -153,6 +161,14 @@ h5 {
     cursor: pointer; }
 
 @media only screen and (min-width: 768px) {
+  header {
+    width: 100%;
+    position: fixed; }
+  .menu-button {
+    display: none; }
+  .header-dropdown {
+    visibility: visible;
+    flex-direction: row; }
   .grid-container {
     padding: 50px 80px; }
   .grid-products {
@@ -162,6 +178,7 @@ h5 {
   .product-card {
     padding: 5px 5px; }
   .hero {
+    height: 100vh;
     padding: 320px 0px 50px; }
     .hero .hero-text h2,
     .hero .hero-text p {

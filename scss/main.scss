@@ -18,11 +18,12 @@ header {
   align-items: center;
   background-color: $color-dark;
   color: $color-light;
+  opacity: 0.95;
 }
 
 .menu-button {
   border: none;
-  margin: 10px 10px;
+  margin: 0 10px;
   font-size: 2rem;
   background: none;
   color: $color-light;
@@ -34,6 +35,7 @@ header {
 }
 
 .site-title {
+  margin: 0 10px;
   font-size: 2rem;
   font-weight: bold;
   flex-grow: 1;
@@ -47,6 +49,8 @@ header {
 }
 
 .header-dropdown {
+  display: flex;
+  flex-direction: column;
   visibility: hidden;
   width: 100%;
   position: absolute;
@@ -57,12 +61,17 @@ header {
 
 .dropdown-row {
   padding: 10px 30px;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  white-space: nowrap;
 
   &:hover {
     text-decoration: underline;
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.1)
+  }
+  a {
+  color: $color-light;
+  text-decoration: none;
   }
 }
 
@@ -201,6 +210,18 @@ h5 {
 
 
 @media only screen and (min-width: 768px) {
+  header {
+    width: 100%;
+    position: fixed;
+  }
+  .menu-button {
+    display: none;
+  }
+  .header-dropdown {
+    visibility: visible;
+    flex-direction: row;
+  }
+
   .grid-container {
     padding: 50px 80px;
   }
@@ -216,6 +237,7 @@ h5 {
   }
 
   .hero {
+    height: 100vh;
     padding: 320px 0px 50px;
 
     .hero-text h2,
