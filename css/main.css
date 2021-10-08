@@ -106,9 +106,6 @@ header {
 .product-card {
   margin-bottom: 40px; }
 
-.product-card p {
-  margin: 3px; }
-
 .product-card img {
   height: auto;
   max-width: 100%;
@@ -123,7 +120,7 @@ figure {
     background-color: #FF6B6B;
     color: #FFFFFF; }
   figure figcaption {
-    padding: 10px; }
+    padding-bottom: 10px; }
 
 h4,
 h5 {
@@ -131,7 +128,7 @@ h5 {
   font-weight: 300; }
 
 h4 {
-  font-size: 0.9rem; }
+  font-size: 0.8rem; }
 
 h5 {
   margin: 7px 0px 5px;
@@ -198,6 +195,7 @@ h5 {
   font-weight: 700; }
 
 .shoppingcart {
+  padding-right: 10px;
   text-align: right; }
 
 ::-webkit-scrollbar {
@@ -229,11 +227,15 @@ h5 {
     width: 80%;
     align-self: center; }
   .checkout-container {
-    padding-top: 170px; }
+    padding-top: 170px;
+    width: 80%;
+    margin: 0 auto; }
   .grid-products {
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 0px;
     padding-bottom: 25px; }
+    .grid-products h4 {
+      font-size: 1rem; }
   .order-container .product-card {
     padding: 0; }
   .product-card {
