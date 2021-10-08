@@ -5,7 +5,8 @@ body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  font-size: 12pt; }
 
 header {
   position: relative;
@@ -141,24 +142,25 @@ h5 {
   .hero .hero-text {
     text-align: center;
     color: #fff;
-    padding: 150px 0px 20px; }
-    .hero .hero-text h2,
-    .hero .hero-text p {
-      margin: 5px; }
+    padding: 160px 0px 30px; }
 
-.hero-text a {
-  color: white; }
+.hero h2 {
+  font-size: 1.5rem; }
 
 .btn {
   border-radius: 20px;
   font-weight: 700;
+  font-size: 0.7rem;
   color: black;
-  padding: 10px;
-  width: 150px;
-  height: 50px;
+  width: 115px;
+  height: 30px;
+  margin-top: 5px;
   background-color: #FF6B6B; }
   .btn:hover {
-    cursor: pointer; }
+    cursor: pointer;
+    opacity: 0.9;
+    transform: translateY(-2px);
+    transition: transform 0.4s; }
 
 @media only screen and (min-width: 768px) {
   header {
@@ -186,6 +188,16 @@ h5 {
   .hero-text h2 {
     font-size: 3.3rem; }
     .hero-text h2 .hero-text p {
+<<<<<<< HEAD
+      font-size: 1.2rem; }
+  .btn {
+    font-size: 1.1rem;
+    border-radius: 20px;
+    padding: 10px;
+    width: 160px;
+    height: 50px;
+    margin-top: 20px; } }
+=======
       font-size: 1.2rem; } }
 
 ::-webkit-scrollbar {
@@ -197,3 +209,4 @@ h5 {
 ::-webkit-scrollbar-thumb {
   background: #399993;
   opacity: 0.5; }
+>>>>>>> 79933dace23e0b6b9bc5e875f5f78be54b52fec7
