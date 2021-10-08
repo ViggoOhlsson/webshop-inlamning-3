@@ -255,6 +255,10 @@ h5 {
   font-weight: 700;
 }
 
+.shoppingcart {
+text-align: right;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -273,6 +277,7 @@ h5 {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
 @media only screen and (min-width: 1024px) {
   header {
     width: 100%;
@@ -315,7 +320,11 @@ h5 {
 
   .hero {
     height: 100vh;
-    padding: 320px 0px 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+
 
     .hero-text h2,
     .hero-text p {
@@ -329,6 +338,10 @@ h5 {
     .hero-text p {
       font-size: 1.2rem;
     }
+  }
+
+  .hero-text {
+    padding-top: 200px;
   }
 
   .btn {
