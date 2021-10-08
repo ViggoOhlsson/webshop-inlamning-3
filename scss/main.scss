@@ -131,10 +131,6 @@ header {
   margin-bottom: 40px;
 }
 
-.product-card img:hover {
-  opacity: 0.9;
-  ;
-}
 
 .product-card img {
   height: auto;
@@ -145,9 +141,16 @@ header {
 figure {
   padding: 0;
   margin: 0;
+  border-radius: 0 0 5px 5px;
+  transition: background-color 0.1s linear;
+
+  &:hover {
+    background-color: $color-salmon;
+    color: $color-light;
+  }
 
   figcaption {
-    margin-top: 10px;
+    padding: 10px;
   }
 }
 
@@ -236,6 +239,7 @@ h5 {
 
   .product-card {
     padding: 5px 5px;
+
   }
 
   .hero {

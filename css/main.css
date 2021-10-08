@@ -103,9 +103,6 @@ header {
 .product-card {
   margin-bottom: 40px; }
 
-.product-card img:hover {
-  opacity: 0.9; }
-
 .product-card img {
   height: auto;
   max-width: 100%;
@@ -113,9 +110,14 @@ header {
 
 figure {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  border-radius: 0 0 5px 5px;
+  transition: background-color 0.1s linear; }
+  figure:hover {
+    background-color: #FF6B6B;
+    color: #FFFFFF; }
   figure figcaption {
-    margin-top: 10px; }
+    padding: 10px; }
 
 h4,
 h5 {
@@ -188,7 +190,6 @@ h5 {
   .hero-text h2 {
     font-size: 3.3rem; }
     .hero-text h2 .hero-text p {
-<<<<<<< HEAD
       font-size: 1.2rem; }
   .btn {
     font-size: 1.1rem;
@@ -197,8 +198,6 @@ h5 {
     width: 160px;
     height: 50px;
     margin-top: 20px; } }
-=======
-      font-size: 1.2rem; } }
 
 ::-webkit-scrollbar {
   width: 10px; }
@@ -209,4 +208,3 @@ h5 {
 ::-webkit-scrollbar-thumb {
   background: #399993;
   opacity: 0.5; }
->>>>>>> 79933dace23e0b6b9bc5e875f5f78be54b52fec7
