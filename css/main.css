@@ -268,7 +268,7 @@ h5 {
   flex-direction: column; }
   .tack-sidan .tack {
     display: flex;
-    padding-top: 150px;
+    padding-top: 90px;
     justify-content: center; }
     .tack-sidan .tack .tack-köp {
       color: #4ecdc4;
@@ -276,11 +276,48 @@ h5 {
       font-size: 30px; }
 
 .party {
+  display: flex;
   justify-content: center;
-  align-items: center; }
-  .party .fa-solid.fa-party-horn {
-    font-size: 30px;
-    color: #4ecdc4; }
+  align-items: center;
+  padding: 15px; }
+
+.far.fa-thumbs-up {
+  font-size: 50px;
+  color: #4ecdc4; }
+
+.genomfört-köp {
+  display: flex;
+  justify-content: center; }
+
+h4 {
+  color: black;
+  font-size: 1em; }
+
+.order {
+  padding-top: 50px;
+  padding: 15px; }
+  .order .text {
+    color: black; }
+  .order .text-fet {
+    color: rgba(0, 0, 0, 0.406);
+    font-weight: 900;
+    font-size: 18px; }
+  .order .order-border {
+    border-top: 2px solid #292F36; }
+
+.stäng-knapp {
+  display: flex;
+  justify-content: center; }
+  .stäng-knapp .stäng {
+    background-color: #FF6B6B;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px; }
 
 .footer-p {
   padding-top: 10px; }
