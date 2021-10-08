@@ -256,7 +256,7 @@ h5 {
 }
 
 .shoppingcart {
-text-align: right;
+  text-align: right;
 }
 
 ::-webkit-scrollbar {
@@ -324,8 +324,6 @@ text-align: right;
     justify-content: flex-end;
     align-items: center;
 
-
-
     .hero-text h2,
     .hero-text p {
       margin: 15px;
@@ -351,6 +349,9 @@ text-align: right;
     width: 160px;
     height: 50px;
     margin-top: 20px;
+  }
+  .tack-sidan {
+    padding-top: 100px;
   }
 }
 //end media queries
@@ -419,17 +420,9 @@ h4 {
 .stäng-knapp {
   display: flex;
   justify-content: center;
-
-  .stäng {
-    background-color: $color-salmon;
-    border: none;
-    border-radius: 8px;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
+  a {
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+    color: black;
   }
 }
 
