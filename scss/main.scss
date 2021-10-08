@@ -216,6 +216,7 @@ h5 {
   }
 }
 
+/* checkout page */
 .checkout-header {
   text-align: left;
 }
@@ -254,6 +255,8 @@ h5 {
   text-align: right;
 }
 
+/* scrollbar */
+
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -266,6 +269,8 @@ h5 {
   background: $color-darkteal;
   opacity: 0.5;
 }
+
+/* media queries */
 
 @media only screen and (min-width: 768px) {
   .grid-products {
@@ -299,6 +304,10 @@ h5 {
     padding-top: 170px;
     width: 80%;
     margin: 0 auto;
+  }
+
+  .order-container {
+    grid-column-gap: 30px;
   }
 
   .grid-products {
