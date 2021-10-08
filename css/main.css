@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   scroll-behavior: smooth; }
 
@@ -255,3 +256,48 @@ h5 {
     width: 160px;
     height: 50px;
     margin-top: 20px; } }
+
+::-webkit-scrollbar {
+  width: 10px; }
+
+::-webkit-scrollbar-track {
+  background: #292F36; }
+
+::-webkit-scrollbar-thumb {
+  background: #399993;
+  opacity: 0.5; }
+
+.tack-sidan {
+  display: flex;
+  flex-direction: column; }
+  .tack-sidan .tack {
+    display: flex;
+    padding-top: 150px;
+    justify-content: center; }
+    .tack-sidan .tack .tack-köp {
+      color: #4ecdc4;
+      font-weight: bolder;
+      font-size: 30px; }
+
+.party {
+  justify-content: center;
+  align-items: center; }
+  .party .fa-solid.fa-party-horn {
+    font-size: 30px;
+    color: #4ecdc4; }
+
+.footer-p {
+  padding-top: 10px; }
+
+.följ-oss {
+  display: grid;
+  justify-content: center; }
+  .följ-oss h4 {
+    font-size: 30px; }
+
+.social-p {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 25px;
+  font-size: 30px; }
