@@ -197,6 +197,9 @@ h5 {
 .total {
   font-weight: 700; }
 
+.shoppingcart {
+  text-align: right; }
+
 ::-webkit-scrollbar {
   width: 10px; }
 
