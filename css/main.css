@@ -78,7 +78,9 @@ header {
 .main-content {
   height: 100%;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  display: flex;
+  flex-direction: column; }
 
 .grid-container {
   padding: 10px; }
@@ -184,6 +186,10 @@ h5 {
   font-weight: 700; }
 
 @media only screen and (min-width: 768px) {
+  .grid-products {
+    grid-template-columns: repeat(3, 1fr); } }
+
+@media only screen and (min-width: 1024px) {
   header {
     width: 100%;
     position: fixed; }
@@ -191,9 +197,12 @@ h5 {
     display: none; }
   .header-dropdown {
     visibility: visible;
-    flex-direction: row; }
+    flex-direction: row;
+    justify-content: center; }
   .grid-container {
-    padding: 50px 80px; }
+    padding: 50px 80px;
+    width: 80%;
+    align-self: center; }
   .grid-products {
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 0px;
