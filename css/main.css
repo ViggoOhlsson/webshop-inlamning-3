@@ -28,7 +28,7 @@ header {
     color: #4ECDC4; }
 
 .site-title {
-  margin: 0 10px;
+  margin: 0 40px;
   font-size: 2rem;
   font-weight: bold;
   flex-grow: 1;
@@ -78,7 +78,9 @@ header {
 .main-content {
   height: 100%;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  display: flex;
+  flex-direction: column; }
 
 .grid-container {
   padding: 10px; }
@@ -205,6 +207,10 @@ h5 {
   opacity: 0.5; }
 
 @media only screen and (min-width: 768px) {
+  .grid-products {
+    grid-template-columns: repeat(3, 1fr); } }
+
+@media only screen and (min-width: 1024px) {
   header {
     width: 100%;
     position: fixed; }
@@ -212,9 +218,12 @@ h5 {
     display: none; }
   .header-dropdown {
     visibility: visible;
-    flex-direction: row; }
+    flex-direction: row;
+    justify-content: center; }
   .grid-container {
-    padding: 50px 80px; }
+    padding: 50px 80px;
+    width: 80%;
+    align-self: center; }
   .checkout-container {
     padding-top: 170px; }
   .grid-products {
