@@ -21,7 +21,7 @@ header {
   align-items: center;
   background-color: $color-dark;
   color: $color-light;
-  opacity: 0.95;
+  opacity: 0.85;
 }
 
 .menu-button {
@@ -81,9 +81,9 @@ header {
 
 .socials-wrapper {
   display: flex;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   gap: 20px;
-  margin: 0 20px;
+  padding: 0 20px;
 
   i:hover {
     color: $color-teal;
@@ -152,9 +152,16 @@ header {
 figure {
   padding: 0;
   margin: 0;
+  border-radius: 0 0 5px 5px;
+  transition: background-color 0.1s linear;
+
+  &:hover {
+    background-color: $color-salmon;
+    color: $color-light;
+  }
 
   figcaption {
-    margin-top: 10px;
+    padding: 10px;
   }
 }
 
@@ -277,6 +284,9 @@ h5 {
 
   .order-container .product-card {
     padding: 0;
+  .product-card {
+    padding: 5px 5px;
+
   }
 
   .hero {
@@ -324,4 +334,5 @@ h5 {
 ::-webkit-scrollbar-thumb {
   background: $color-darkteal;
   opacity: 0.5;
+}
 }
