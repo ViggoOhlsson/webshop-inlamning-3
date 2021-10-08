@@ -2,8 +2,9 @@
 @import "variables";
 
 html {
-  scroll-behavior:  smooth;
+  scroll-behavior: smooth;
 }
+
 body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
@@ -11,6 +12,7 @@ body {
   color: $color-light;
   font-size: 12pt;
 }
+
 // HEADER
 header {
   position: relative;
@@ -70,9 +72,10 @@ header {
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.1)
   }
+
   a {
-  color: $color-light;
-  text-decoration: none;
+    color: $color-light;
+    text-decoration: none;
   }
 }
 
@@ -129,6 +132,10 @@ header {
 
 .product-card {
   margin-bottom: 40px;
+}
+
+.product-card p {
+  margin: 3px;
 }
 
 .product-card img:hover {
@@ -212,11 +219,21 @@ h5 {
   text-align: left;
 }
 
+
 .checkout {
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  padding: 20px;
+}
+
+.order-container {
+  display: grid;
+  grid-column-gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  color: black;
 }
 
 .order-container a {
@@ -225,7 +242,7 @@ justify-content: center;
 }
 
 .order-container .product-card {
-margin: 0px;
+  margin: 5px;
 }
 
 .total {
@@ -238,9 +255,11 @@ margin: 0px;
     width: 100%;
     position: fixed;
   }
+
   .menu-button {
     display: none;
   }
+
   .header-dropdown {
     visibility: visible;
     flex-direction: row;
@@ -256,8 +275,8 @@ margin: 0px;
     padding-bottom: 25px;
   }
 
-  .product-card {
-    padding: 5px 5px;
+  .order-container .product-card {
+    padding: 0;
   }
 
   .hero {
@@ -279,6 +298,10 @@ margin: 0px;
     }
   }
 
+  .checkout-container {
+    padding-top: 160px;
+  }
+
   .btn {
     font-size: 1.1rem;
     border-radius: 100px;
@@ -288,6 +311,7 @@ margin: 0px;
     margin-top: 20px;
   }
 }
+
 ::-webkit-scrollbar {
   width: 10px;
 
