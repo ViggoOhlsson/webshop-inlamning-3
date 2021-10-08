@@ -236,7 +236,9 @@ h5 {
     padding: 5px 5px; }
   .hero {
     height: 100vh;
-    padding: 320px 0px 50px; }
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
     .hero .hero-text h2,
     .hero .hero-text p {
       margin: 15px; }
@@ -244,6 +246,8 @@ h5 {
     font-size: 3.3rem; }
     .hero-text h2 .hero-text p {
       font-size: 1.2rem; }
+  .hero-text {
+    padding-top: 200px; }
   .btn {
     font-size: 1.1rem;
     border-radius: 100px;

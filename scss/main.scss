@@ -273,6 +273,7 @@ h5 {
   }
 
 }
+
 @media only screen and (min-width: 1024px) {
   header {
     width: 100%;
@@ -291,11 +292,11 @@ h5 {
 
   .grid-container {
     padding: 50px 80px;
-    width:80%;
+    width: 80%;
     align-self: center;
   }
 
-.checkout-container {
+  .checkout-container {
     padding-top: 170px;
   }
 
@@ -315,7 +316,11 @@ h5 {
 
   .hero {
     height: 100vh;
-    padding: 320px 0px 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+
 
     .hero-text h2,
     .hero-text p {
@@ -331,6 +336,10 @@ h5 {
     }
   }
 
+  .hero-text {
+    padding-top: 200px;
+  }
+
   .btn {
     font-size: 1.1rem;
     border-radius: 100px;
@@ -340,5 +349,3 @@ h5 {
     margin-top: 20px;
   }
 }
-
-
