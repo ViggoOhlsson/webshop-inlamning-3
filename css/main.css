@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth; }
+
 body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
@@ -11,18 +14,21 @@ header {
   height: 75px;
   align-items: center;
   background-color: #292F36;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  opacity: 0.95; }
 
 .menu-button {
   border: none;
-  margin: 10px 10px;
+  margin: 0 10px;
   font-size: 2rem;
   background: none;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  transition: color 0.05s ease-in-out; }
   .menu-button:hover {
     color: #4ECDC4; }
 
 .site-title {
+  margin: 0 10px;
   font-size: 2rem;
   font-weight: bold;
   flex-grow: 1;
@@ -33,19 +39,26 @@ header {
     cursor: pointer; }
 
 .header-dropdown {
+  display: flex;
+  flex-direction: column;
   visibility: hidden;
   width: 100%;
   position: absolute;
   top: 75px;
-  background-color: #FF6B6B; }
+  background-color: #FF6B6B;
+  z-index: 1; }
 
 .dropdown-row {
   padding: 10px 30px;
-  font-size: 1.5rem; }
+  font-size: 1.3rem;
+  white-space: nowrap; }
   .dropdown-row:hover {
     text-decoration: underline;
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.1); }
+  .dropdown-row a {
+    color: #FFFFFF;
+    text-decoration: none; }
 
 .socials-wrapper {
   display: flex;
@@ -119,11 +132,9 @@ h5 {
 
 .hero {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), black), url("../assets/images/hero.jpg");
-  height: 100%;
-  background-position: bottom center;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -152,6 +163,14 @@ h5 {
     transition: transform 0.4s; }
 
 @media only screen and (min-width: 768px) {
+  header {
+    width: 100%;
+    position: fixed; }
+  .menu-button {
+    display: none; }
+  .header-dropdown {
+    visibility: visible;
+    flex-direction: row; }
   .grid-container {
     padding: 50px 80px; }
   .grid-products {
@@ -161,6 +180,7 @@ h5 {
   .product-card {
     padding: 5px 5px; }
   .hero {
+    height: 100vh;
     padding: 320px 0px 50px; }
     .hero .hero-text h2,
     .hero .hero-text p {
@@ -168,6 +188,7 @@ h5 {
   .hero-text h2 {
     font-size: 3.3rem; }
     .hero-text h2 .hero-text p {
+<<<<<<< HEAD
       font-size: 1.2rem; }
   .btn {
     font-size: 1.1rem;
@@ -176,3 +197,16 @@ h5 {
     width: 160px;
     height: 50px;
     margin-top: 20px; } }
+=======
+      font-size: 1.2rem; } }
+
+::-webkit-scrollbar {
+  width: 10px; }
+
+::-webkit-scrollbar-track {
+  background: #292F36; }
+
+::-webkit-scrollbar-thumb {
+  background: #399993;
+  opacity: 0.5; }
+>>>>>>> 79933dace23e0b6b9bc5e875f5f78be54b52fec7
