@@ -29,15 +29,16 @@ header {
     color: #4ECDC4; }
 
 .site-title {
-  margin: 0 40px;
-  font-size: 2rem;
-  font-weight: bold;
+  padding-top: 10px;
+  margin: 0 20px;
   flex-grow: 1;
-  color: #FFFFFF;
-  text-decoration: none; }
+  color: #FFFFFF; }
   .site-title:hover {
     color: #FFFFFF;
     cursor: pointer; }
+
+.logo {
+  width: 220px; }
 
 .header-dropdown {
   display: flex;
@@ -75,7 +76,7 @@ header {
   font-size: 2rem;
   font-weight: bold; }
 
-/* main content */
+/* MAIN CONTENT LANDING PAGE */
 .main-content {
   height: 100%;
   margin: 0;
@@ -167,7 +168,7 @@ h5 {
     transform: translateY(-2px);
     transition: transform 0.4s; }
 
-/* checkout page */
+/* CHECKOUT PAGE */
 .checkout-header {
   text-align: left; }
 
@@ -199,7 +200,7 @@ h5 {
   padding-right: 10px;
   text-align: right; }
 
-/* scrollbar */
+/* SCROLLBAR */
 ::-webkit-scrollbar {
   width: 10px; }
 
@@ -210,7 +211,85 @@ h5 {
   background: #399993;
   opacity: 0.5; }
 
-/* media queries */
+/* THANK YOU PAGE */
+.tack-sidan {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  padding: 90px 10px; }
+  .tack-sidan .tack {
+    display: flex;
+    justify-content: center; }
+    .tack-sidan .tack .tack-köp {
+      color: #4ecdc4;
+      font-weight: bolder;
+      font-size: 30px; }
+
+.party {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px; }
+  .party .fa-solid.fa-party-horn {
+    font-size: 30px;
+    color: #4ecdc4; }
+
+.far.fa-thumbs-up {
+  font-size: 50px;
+  color: #4ecdc4; }
+
+.genomfört-köp {
+  display: flex;
+  justify-content: center;
+  padding: 10px; }
+
+h4 {
+  color: black;
+  font-size: 1em; }
+
+.order {
+  padding-top: 50px;
+  padding: 15px; }
+  .order .text {
+    color: black; }
+  .order .text-fet {
+    color: rgba(0, 0, 0, 0.406);
+    font-weight: 900;
+    font-size: 18px; }
+  .order .order-border {
+    border-top: 2px solid #292F36; }
+
+.stäng-knapp {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .stäng-knapp .btn {
+    padding: 15px;
+    width: 100px;
+    height: 50px;
+    border-radius: 100px; }
+  .stäng-knapp a {
+    text-decoration: none;
+    color: black; }
+
+/* FOOTER */
+.footer-p {
+  padding-top: 10px; }
+
+.följ-oss {
+  display: grid;
+  justify-content: center; }
+  .följ-oss h4 {
+    font-size: 20px; }
+
+.social-p {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 25px;
+  font-size: 30px; }
+
+/* MEDIA QUERIES */
 @media only screen and (min-width: 768px) {
   .grid-products {
     grid-template-columns: repeat(3, 1fr); } }
@@ -262,11 +341,13 @@ h5 {
   .btn {
     font-size: 1.1rem;
     border-radius: 100px;
+    border: none;
     padding: 10px;
     width: 160px;
     height: 50px;
     margin-top: 20px; }
   .tack-sidan {
+<<<<<<< HEAD
     padding-top: 100px; } }
 
 ::-webkit-scrollbar {
@@ -326,15 +407,14 @@ h5 {
       text-decoration: none;
       color: black; }
   .party .footer-p {
+=======
+    padding-top: 200px; }
+  footer#contact {
+>>>>>>> 3a8c7948d6887de2681ed6694f2cb228637899a5
     padding-top: 10px; }
-  .party .följ-oss {
-    display: grid;
-    justify-content: center; }
-    .party .följ-oss h4 {
-      font-size: 30px; }
-  .party .social-p {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-bottom: 25px;
-    font-size: 30px; }
+  .stäng-knapp .btn {
+    padding: 15px;
+    width: 100px;
+    height: 50px;
+    border-radius: 100px;
+    font-size: 1rem; } }

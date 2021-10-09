@@ -38,19 +38,19 @@ header {
 }
 
 .site-title {
-  margin: 0 40px;
-  font-size: 2rem;
-  font-weight: bold;
+  padding-top: 10px;
+  margin: 0 20px;
   flex-grow: 1;
   color: $color-light;
-  text-decoration: none;
 
   &:hover {
     color: $color-light;
     cursor: pointer;
   }
 }
-
+.logo {
+  width: 220px;
+}
 .header-dropdown {
   display: flex;
   flex-direction: column;
@@ -97,7 +97,7 @@ header {
   font-weight: bold;
 }
 
-/* main content */
+/* MAIN CONTENT LANDING PAGE */
 .main-content {
   height: 100%;
   margin: 0;
@@ -175,9 +175,11 @@ h5 {
 }
 
 .hero {
-  background-image: linear-gradient(to bottom,
+  background-image: linear-gradient(
+      to bottom,
       rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 100)),
+      rgba(0, 0, 0, 100)
+    ),
     url("../assets/images/hero.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -216,7 +218,7 @@ h5 {
   }
 }
 
-/* checkout page */
+/* CHECKOUT PAGE */
 .checkout-header {
   text-align: left;
 }
@@ -255,7 +257,7 @@ h5 {
   text-align: right;
 }
 
-/* scrollbar */
+/* SCROLLBAR */
 
 ::-webkit-scrollbar {
   width: 10px;
@@ -270,7 +272,115 @@ h5 {
   opacity: 0.5;
 }
 
-/* media queries */
+/* THANK YOU PAGE */
+
+.tack-sidan {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  padding: 90px 10px;
+
+  .tack {
+    display: flex;
+    justify-content: center;
+
+    .tack-köp {
+      color: #4ecdc4;
+      font-weight: bolder;
+      font-size: 30px;
+    }
+  }
+}
+
+.party {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+
+  .fa-solid.fa-party-horn {
+    font-size: 30px;
+    color: #4ecdc4;
+  }
+}
+
+.far.fa-thumbs-up {
+  font-size: 50px;
+  color: #4ecdc4;
+}
+
+.genomfört-köp {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+h4 {
+  color: black;
+  font-size: 1em;
+}
+
+.order {
+  padding-top: 50px;
+  padding: 15px;
+
+  .text {
+    color: black;
+  }
+
+  .text-fet {
+    color: rgba(0, 0, 0, 0.406);
+    font-weight: 900;
+    font-size: 18px;
+  }
+
+  .order-border {
+    border-top: 2px solid $color-dark;
+  }
+}
+
+.stäng-knapp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .btn {
+    padding: 15px;
+    width: 100px;
+    height: 50px;
+    border-radius: 100px;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+/* FOOTER */
+
+.footer-p {
+  padding-top: 10px;
+}
+
+.följ-oss {
+  display: grid;
+  justify-content: center;
+
+  h4 {
+    font-size: 20px;
+  }
+}
+
+.social-p {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 25px;
+  font-size: 30px;
+}
+
+/* MEDIA QUERIES */
 
 @media only screen and (min-width: 768px) {
   .grid-products {
@@ -355,113 +465,26 @@ h5 {
   .btn {
     font-size: 1.1rem;
     border-radius: 100px;
+    border: none;
     padding: 10px;
     width: 160px;
     height: 50px;
     margin-top: 20px;
   }
+
   .tack-sidan {
-    padding-top: 100px;
+    padding-top: 200px;
   }
-}
 
-//end media queries
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background: $color-dark;
-}
-
-::-webkit-scrollbar-thumb {
-  background: $color-darkteal;
-  opacity: 0.5;
-}
-
-//tack-sida
-.tack-sidan {
-  display: flex;
-  flex-direction: column;
-
-  .tack {
-    display: flex;
-    padding-top: 90px;
-    justify-content: center;
-
-    .tack-köp {
-      color: #4ecdc4;
-      font-weight: bolder;
-      font-size: 30px;
-    }
+  footer#contact {
+    padding-top: 10px;
   }
-}
 
-.party {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  .fa-solid.fa-party-horn {
-    font-size: 30px;
-    color: #4ecdc4;
-  padding: 15px;
-}
-.far.fa-thumbs-up {
-  font-size: 50px;
-  color: $color-salmon;
-}
-.genomfört-köp {
-  display: flex;
-  justify-content: center;
-}
-h4 {
-  color: black;
-  font-size: 1em;
-}
-.order {
-  padding-top: 50px;
-  padding: 15px;
-  .text {
-    color: black;
+  .stäng-knapp .btn {
+    padding: 15px;
+    width: 100px;
+    height: 50px;
+    border-radius: 100px;
+    font-size: 1rem;
   }
-  .text-fet {
-    color: rgba(0, 0, 0, 0.406);
-    font-weight: 900;
-    font-size: 18px;
-  }
-  .order-border {
-    border-top: 2px solid $color-dark;
-  }
-}
-.stäng-knapp {
-  display: flex;
-  justify-content: center;
-  a {
-    text-decoration: none;
-    color: black;
-  }
-}
-
-//end tack-sida
-.footer-p {
-  padding-top: 10px;
-}
-
-.följ-oss {
-  display: grid;
-  justify-content: center;
-
-  h4 {
-    font-size: 30px;
-  }
-}
-
-.social-p {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding-bottom: 25px;
-  font-size: 30px;
-}
 }
