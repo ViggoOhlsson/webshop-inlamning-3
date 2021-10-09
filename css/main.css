@@ -29,15 +29,16 @@ header {
     color: #4ECDC4; }
 
 .site-title {
-  margin: 0 40px;
-  font-size: 2rem;
-  font-weight: bold;
+  padding-top: 10px;
+  margin: 0 20px;
   flex-grow: 1;
-  color: #FFFFFF;
-  text-decoration: none; }
+  color: #FFFFFF; }
   .site-title:hover {
     color: #FFFFFF;
     cursor: pointer; }
+
+.logo {
+  width: 220px; }
 
 .header-dropdown {
   display: flex;

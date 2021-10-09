@@ -38,19 +38,19 @@ header {
 }
 
 .site-title {
-  margin: 0 40px;
-  font-size: 2rem;
-  font-weight: bold;
+  padding-top: 10px;
+  margin: 0 20px;
   flex-grow: 1;
   color: $color-light;
-  text-decoration: none;
 
   &:hover {
     color: $color-light;
     cursor: pointer;
   }
 }
-
+.logo {
+  width: 220px;
+}
 .header-dropdown {
   display: flex;
   flex-direction: column;
@@ -175,9 +175,11 @@ h5 {
 }
 
 .hero {
-  background-image: linear-gradient(to bottom,
+  background-image: linear-gradient(
+      to bottom,
       rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 100)),
+      rgba(0, 0, 0, 100)
+    ),
     url("../assets/images/hero.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -270,7 +272,6 @@ h5 {
   opacity: 0.5;
 }
 
-
 /* THANK YOU PAGE */
 
 .tack-sidan {
@@ -303,85 +304,81 @@ h5 {
   }
 }
 
-  .far.fa-thumbs-up {
-    font-size: 50px;
-    color: #4ecdc4;
+.far.fa-thumbs-up {
+  font-size: 50px;
+  color: #4ecdc4;
+}
+
+.genomfört-köp {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+h4 {
+  color: black;
+  font-size: 1em;
+}
+
+.order {
+  padding-top: 50px;
+  padding: 15px;
+
+  .text {
+    color: black;
   }
 
-  .genomfört-köp {
-    display: flex;
-    justify-content: center;
-    padding: 10px;
+  .text-fet {
+    color: rgba(0, 0, 0, 0.406);
+    font-weight: 900;
+    font-size: 18px;
   }
+
+  .order-border {
+    border-top: 2px solid $color-dark;
+  }
+}
+
+.stäng-knapp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .btn {
+    padding: 15px;
+    width: 100px;
+    height: 50px;
+    border-radius: 100px;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+/* FOOTER */
+
+.footer-p {
+  padding-top: 10px;
+}
+
+.följ-oss {
+  display: grid;
+  justify-content: center;
 
   h4 {
-    color: black;
-    font-size: 1em;
+    font-size: 20px;
   }
+}
 
-  .order {
-    padding-top: 50px;
-    padding: 15px;
-
-    .text {
-      color: black;
-    }
-
-    .text-fet {
-      color: rgba(0, 0, 0, 0.406);
-      font-weight: 900;
-      font-size: 18px;
-    }
-
-    .order-border {
-      border-top: 2px solid $color-dark;
-    }
-  }
-
-  .stäng-knapp {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    .btn {
-      padding: 15px;
-      width: 100px;
-      height: 50px;
-      border-radius: 100px;
-    }
-
-    a {
-      text-decoration: none;
-      color: black;
-    }
-  }
-
-
-  /* FOOTER */
-
-  .footer-p {
-    padding-top: 10px;
-  }
-
-  .följ-oss {
-    display: grid;
-    justify-content: center;
-
-    h4 {
-      font-size: 20px;
-    }
-  }
-
-  .social-p {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-bottom: 25px;
-    font-size: 30px;
-  }
-
-
-
+.social-p {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 25px;
+  font-size: 30px;
+}
 
 /* MEDIA QUERIES */
 
@@ -484,10 +481,10 @@ h5 {
   }
 
   .stäng-knapp .btn {
-      padding: 15px;
-      width: 100px;
-      height: 50px;
-      border-radius: 100px;
-      font-size: 1rem;
-    }
+    padding: 15px;
+    width: 100px;
+    height: 50px;
+    border-radius: 100px;
+    font-size: 1rem;
+  }
 }
