@@ -127,20 +127,64 @@
         <h2>Överdelar</h2>
       </div>
       <div class="grid-products">
-        <a href="checkout.html">
-          <div class="product-card">
-            <figure>
-              <img src="assets/images/product-images/junkyard-fiercefleece.jpg" alt="">
-              <figcaption>
-                <h5>Junkyard</h5>
-                <h4>Tröja - Fierce Fleece</h4>
-                <h4>499:-</h4>
-                <h5>Färg: Grön</h5>
-              </figcaption>
-              <p class="shoppingcart"><i class="fas fa-cart-plus"></i></p>
-            </figure>
+          <button
+            type="button" id="btn-köp"
+            class="btn-köp "
+            data-bs-toggle="modal"
+            data-bs-target="#confirmModal"
+          >
+          
+          <a href="#">
+            <div class="product-card">
+              <figure>
+                <img src="assets/images/product-images/junkyard-fiercefleece.jpg" alt="">
+                <figcaption>
+                  <h5>Junkyard</h5>
+                  <h4>Tröja - Fierce Fleece</h4>
+                  <h4>499:-</h4>
+                  <h5>Färg: Grön</h5>
+                </figcaption>
+                <p class="shoppingcart"><i class="fas fa-cart-plus"></i></p>
+              </figure>
+            </div>
+          </a>
+
+
+          </button>
+          <div
+            class="modal fade"
+            id="confirmModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Lägg till i kundvagnen.</h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <img src="assets/images/product-images/junkyard-fiercefleece.jpg" alt="">
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                  <a href="checkout.html">Köp</a>
+                  </button>
+                  <button type="button" class="btn btn-danger">Avbryt</button>
+                </div>
+              </div>
+            </div>
           </div>
-        </a>
         <a href="">
           <div class="product-card">
             <figure>
@@ -572,7 +616,9 @@
     </div>
     <!-- Copyright -->
   </footer>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+</script>
   <script src="script/script.js"></script>
 </body>
 
