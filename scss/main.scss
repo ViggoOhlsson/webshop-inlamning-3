@@ -166,7 +166,7 @@ h5 {
 }
 
 .product-card h4 {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 
 .product-card h5 {
@@ -403,6 +403,10 @@ h5 {
     font-size: 30px;
   }
 
+  button .product-card {
+    text-align: left;
+  }
+
   /* MEDIA QUERIES */
 
   @media only screen and (min-width: 768px) {
@@ -449,7 +453,7 @@ h5 {
       padding-bottom: 25px;
 
       h4 {
-        font-size: 1rem;
+        font-size: 0.85rem;
       }
     }
 

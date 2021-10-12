@@ -120,7 +120,7 @@ figure {
     background-color: #FF6B6B;
     color: #FFFFFF; }
   figure figcaption {
-    padding-bottom: 10px; }
+    padding: 10px 5px; }
 
 .product-card h4,
 h5 {
@@ -129,7 +129,7 @@ h5 {
   color: black; }
 
 .product-card h4 {
-  font-size: 0.8rem; }
+  font-size: 0.7rem; }
 
 .product-card h5 {
   margin: 7px 0px 5px;
@@ -154,7 +154,7 @@ h5 {
   font-size: 1.5rem; }
 
 .btn {
-  border-radius: 100px;
+  border-radius: 60px;
   border: none;
   font-weight: 700;
   font-size: 0.9rem;
@@ -306,6 +306,9 @@ h5 {
   padding-bottom: 25px;
   font-size: 30px; }
 
+button .product-card {
+  text-align: left; }
+
 /* MEDIA QUERIES */
 @media only screen and (min-width: 768px) {
   .grid-products {
@@ -336,7 +339,7 @@ h5 {
     grid-column-gap: 0px;
     padding-bottom: 25px; }
     .grid-products h4 {
-      font-size: 1rem; }
+      font-size: 0.85rem; }
   .order-container .product-card {
     padding: 0; }
   .product-card {
