@@ -319,6 +319,11 @@ h5 {
   background-color: #FF6B6B;
   color: black; }
 
+.modal-btn:hover {
+  opacity: 0.9;
+  background-color: #FF6B6B;
+  color: black; }
+
 button .product-card {
   text-align: left; }
 
