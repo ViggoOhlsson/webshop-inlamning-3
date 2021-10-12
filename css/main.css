@@ -172,12 +172,11 @@ h5 {
   text-align: left; }
 
 .checkout {
+  padding: 10px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: black;
-  padding: 20px; }
+  color: black; }
 
 .order-container {
   display: grid;
@@ -309,6 +308,11 @@ h5 {
   padding-bottom: 25px;
   font-size: 30px; }
 
+.btn-primary:hover {
+  opacity: 0.9;
+  background-color: #FF6B6B;
+  color: black; }
+
 button .product-card {
   text-align: left; }
 
@@ -334,7 +338,9 @@ button .product-card {
   .checkout-container {
     padding-top: 170px;
     width: 80%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; }
   .order-container {
     grid-column-gap: 30px; }
   .grid-products {
@@ -371,6 +377,9 @@ button .product-card {
   font-size: 1rem;
   padding: 17px;
   margin-top: 20px; }
+
+.checkout form {
+  width: 70%; }
 
 .thanks-page {
   padding: 170px 10px; }
