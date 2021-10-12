@@ -59,9 +59,11 @@ header {
   font-size: 1.3rem;
   white-space: nowrap; }
   .dropdown-row:hover {
-    text-decoration: underline;
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.1); }
+  .dropdown-row:hover > a {
+    text-decoration: underline;
+    text-decoration-color: #4ECDC4; }
   .dropdown-row a {
     color: #FFFFFF;
     text-decoration: none; }

@@ -73,9 +73,12 @@ header {
   white-space: nowrap;
 
   &:hover {
-    text-decoration: underline;
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.1);
+  }
+  &:hover > a {
+    text-decoration: underline;
+    text-decoration-color: $color-teal;
   }
 
   a {
