@@ -392,6 +392,8 @@ footer#contact {
   display: flex;
   flex-direction: row;
   gap: 10px; }
+  .modal-body .modal-main #age {
+    width: 20%; }
 
 .modal-body img {
   height: auto;
