@@ -14,8 +14,7 @@ header {
   height: 75px;
   align-items: center;
   background-color: #292F36;
-  color: #FFFFFF;
-  opacity: 0.85; }
+  color: #FFFFFF; }
 
 .menu-button {
   border: none;
@@ -26,6 +25,12 @@ header {
   transition: color 0.05s ease-in-out; }
   .menu-button:hover {
     color: #4ECDC4; }
+
+#menu-toggler {
+  display: none; }
+
+#menu-toggler:checked ~ .header-dropdown {
+  visibility: visible; }
 
 .site-title {
   padding-top: 10px;
@@ -320,7 +325,8 @@ button .product-card {
 @media only screen and (min-width: 1024px) {
   header {
     width: 100%;
-    position: fixed; }
+    position: fixed;
+    opacity: 0.85; }
   .menu-button {
     display: none; }
   .header-dropdown {

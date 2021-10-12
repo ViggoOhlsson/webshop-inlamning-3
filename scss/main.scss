@@ -21,7 +21,6 @@ header {
   align-items: center;
   background-color: $color-dark;
   color: $color-light;
-  opacity: 0.85;
 }
 
 .menu-button {
@@ -35,6 +34,12 @@ header {
   &:hover {
     color: $color-teal;
   }
+}
+#menu-toggler {
+  display: none;
+}
+#menu-toggler:checked ~ .header-dropdown {
+  visibility: visible;
 }
 
 .site-title {
@@ -422,6 +427,7 @@ button .product-card {
   header {
     width: 100%;
     position: fixed;
+    opacity: 0.85;
   }
 
   .menu-button {
