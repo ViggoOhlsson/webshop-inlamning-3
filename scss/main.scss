@@ -336,8 +336,8 @@ h5 {
 }
 
 .order {
-  padding-top: 50px;
-  padding: 15px;
+  padding-top: 30px;
+ 
 
   .text {
     color: black;
@@ -422,6 +422,10 @@ h5 {
 .btn.btn-secondary:hover .btn.btn-danger:hover {
   opacity: 0.9;
   background-color: $color-salmon;
+  color: black;
+}
+
+.modal-title {
   color: black;
 }
 

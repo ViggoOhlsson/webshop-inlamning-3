@@ -260,8 +260,7 @@ h5 {
   font-size: 1em; }
 
 .order {
-  padding-top: 50px;
-  padding: 15px; }
+  padding-top: 30px; }
   .order .text {
     color: black; }
   .order .text-fet {
@@ -324,6 +323,9 @@ h5 {
 .btn.btn-secondary:hover .btn.btn-danger:hover {
   opacity: 0.9;
   background-color: #FF6B6B;
+  color: black; }
+
+.modal-title {
   color: black; }
 
 .modal-btn:hover {
