@@ -262,87 +262,103 @@ h5 {
 .stäng-knapp {
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  /* FOOTER */
+  /* MEDIA QUERIES */ }
   .stäng-knapp .btn {
     width: 100px; }
   .stäng-knapp a {
     text-decoration: none;
     color: black;
     font-size: 1.1rem; }
-
-/* FOOTER */
-.footer-p {
-  padding-top: 10px; }
-
-.följ-oss {
-  display: grid;
-  justify-content: center; }
-  .följ-oss h4 {
-    font-size: 20px; }
-
-.social-p {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding-bottom: 25px;
-  font-size: 30px; }
-
-/* MEDIA QUERIES */
-@media only screen and (min-width: 768px) {
-  .grid-products {
-    grid-template-columns: repeat(3, 1fr); } }
-
-@media only screen and (min-width: 1024px) {
-  header {
-    width: 100%;
-    position: fixed; }
-  .menu-button {
-    display: none; }
-  .header-dropdown {
-    visibility: visible;
-    flex-direction: row;
-    justify-content: center; }
-  .grid-container {
-    padding: 50px 80px;
-    width: 80%;
-    align-self: center; }
-  .checkout-container {
-    padding-top: 170px;
-    width: 80%;
-    margin: 0 auto; }
-  .order-container {
-    grid-column-gap: 30px; }
-  .grid-products {
-    grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 0px;
-    padding-bottom: 25px; }
-    .grid-products h4 {
-      font-size: 1rem; }
-  .order-container .product-card {
-    padding: 0; }
-  .product-card {
-    padding: 5px 5px; }
-  .hero {
-    height: 100vh;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center; }
-    .hero .hero-text h2,
-    .hero .hero-text p {
-      margin: 15px; }
-  .hero-text h2 {
-    font-size: 3.3rem; }
-    .hero-text h2 .hero-text p {
-      font-size: 1.2rem; }
-  .hero-text {
-    padding-top: 200px; }
-  .btn {
-    font-size: 1rem;
-    padding: 17px;
-    margin-top: 20px; }
-  .tack-sidan {
-    padding-top: 200px; }
-  footer#contact {
+    .stäng-knapp a .text-fet {
+      color: rgba(0, 0, 0, 0.406);
+      font-weight: 900;
+      font-size: 18px; }
+  .stäng-knapp .footer-p {
     padding-top: 10px; }
-  .stäng-knapp .btn {
-    width: 120px; } }
+  .stäng-knapp .följ-oss {
+    display: grid;
+    justify-content: center; }
+    .stäng-knapp .följ-oss h4 {
+      font-size: 20px; }
+  .stäng-knapp .social-p {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 25px;
+    font-size: 30px; }
+  .stäng-knapp .footer-p {
+    padding-top: 10px; }
+  .stäng-knapp .följ-oss {
+    display: grid;
+    justify-content: center; }
+    .stäng-knapp .följ-oss h4 {
+      font-size: 20px; }
+  .stäng-knapp .social-p {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 25px;
+    font-size: 30px; }
+  @media only screen and (min-width: 768px) {
+    .stäng-knapp .grid-products {
+      grid-template-columns: repeat(3, 1fr); } }
+  @media only screen and (min-width: 1024px) {
+    .stäng-knapp header {
+      width: 100%;
+      position: fixed; }
+    .stäng-knapp .menu-button {
+      display: none; }
+    .stäng-knapp .header-dropdown {
+      visibility: visible;
+      flex-direction: row;
+      justify-content: center; }
+    .stäng-knapp .grid-container {
+      padding: 50px 80px;
+      width: 80%;
+      align-self: center; }
+    .stäng-knapp .checkout-container {
+      padding-top: 170px;
+      width: 80%;
+      margin: 0 auto; }
+    .stäng-knapp .order-container {
+      grid-column-gap: 30px; }
+    .stäng-knapp .grid-products {
+      grid-template-columns: repeat(4, 1fr);
+      grid-column-gap: 0px;
+      padding-bottom: 25px; }
+      .stäng-knapp .grid-products h4 {
+        font-size: 1rem; }
+    .stäng-knapp .order-container .product-card {
+      padding: 0; }
+    .stäng-knapp .product-card {
+      padding: 5px 5px; }
+    .stäng-knapp .hero {
+      height: 100vh;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center; }
+      .stäng-knapp .hero .hero-text h2,
+      .stäng-knapp .hero .hero-text p {
+        margin: 15px; }
+    .stäng-knapp .hero-text h2 {
+      font-size: 3.3rem; }
+      .stäng-knapp .hero-text h2 .hero-text p {
+        font-size: 1.2rem; }
+    .stäng-knapp .hero-text {
+      padding-top: 200px; }
+    .stäng-knapp .btn {
+      font-size: 1rem;
+      padding: 17px;
+      margin-top: 20px; }
+    .stäng-knapp .tack-sidan {
+      padding-top: 200px; }
+    .stäng-knapp footer#contact {
+      padding-top: 10px; }
+    .stäng-knapp .stäng-knapp .btn {
+      width: 120px; } }
+
+#btn-köp {
+  background: none;
+  border: none; }
