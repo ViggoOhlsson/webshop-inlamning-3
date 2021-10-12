@@ -229,12 +229,11 @@ h5 {
 }
 
 .checkout {
+  padding: 10px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   color: black;
-  padding: 20px;
 }
 
 .order-container {
@@ -411,9 +410,19 @@ h5 {
   font-size: 30px;
 }
 
+.btn.btn-primary:hover,
+.btn.btn-secondary:hover
+.btn.btn-danger:hover {
+  opacity: 0.9;
+  background-color: $color-salmon;
+  color: black;
+  
+}
+
 button .product-card {
   text-align: left;
 }
+
 
 /* MEDIA QUERIES */
 
@@ -450,6 +459,8 @@ button .product-card {
     padding-top: 170px;
     width: 80%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
   }
 
   .order-container {
@@ -503,6 +514,10 @@ button .product-card {
   font-size: 1rem;
   padding: 17px;
   margin-top: 20px;
+}
+
+.checkout form {
+  width: 70%;
 }
 
 .thanks-page {
