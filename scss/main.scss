@@ -215,6 +215,7 @@ h5 {
   font-size: 0.9rem;
   color: rgb(0, 0, 0);
   margin-top: 10px;
+  padding: 6px 12px;
   background-color: $color-salmon;
 
   &:hover {
@@ -231,27 +232,32 @@ h5 {
 }
 
 .checkout {
-  padding: 10px;
+  padding: 15px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
   color: black;
 }
 
-.order-container {
+.order {
   display: grid;
   grid-column-gap: 10px;
   grid-template-columns: repeat(2, 1fr);
   color: black;
 }
 
-.order-container a {
+.order a {
   text-decoration: none;
   color: black;
 }
 
-.order-container .product-card {
+.order .product-card {
   margin: 5px;
+}
+
+.order-btn {
+  width: 100%;
+  padding: 12px;
 }
 
 .total {
@@ -353,9 +359,6 @@ h5 {
   justify-content: center;
   align-items: center;
 
-  .btn {
-    width: 100px;
-  }
   a {
     text-decoration: none;
     color: black;
@@ -438,6 +441,10 @@ button .product-card {
   .grid-products {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .checkout form {
+    width: 70%;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -471,8 +478,12 @@ button .product-card {
     flex-direction: column;
   }
 
-  .order-container {
+  .order {
     grid-column-gap: 30px;
+  }
+
+  .order-btn {
+    width: auto;
   }
 
   .grid-products {
@@ -485,7 +496,7 @@ button .product-card {
     }
   }
 
-  .order-container .product-card {
+  .order .product-card {
     padding: 0;
   }
 
@@ -523,9 +534,6 @@ button .product-card {
     margin-top: 20px;
   }
 
-  .checkout form {
-    width: 70%;
-  }
 
   .thanks-page {
     padding: 170px 10px;

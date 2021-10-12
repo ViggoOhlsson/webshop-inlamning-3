@@ -166,6 +166,7 @@ h5 {
   font-size: 0.9rem;
   color: black;
   margin-top: 10px;
+  padding: 6px 12px;
   background-color: #FF6B6B; }
   .btn:hover {
     cursor: pointer;
@@ -178,24 +179,28 @@ h5 {
   text-align: left; }
 
 .checkout {
-  padding: 10px;
+  padding: 15px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
   color: black; }
 
-.order-container {
+.order {
   display: grid;
   grid-column-gap: 10px;
   grid-template-columns: repeat(2, 1fr);
   color: black; }
 
-.order-container a {
+.order a {
   text-decoration: none;
   color: black; }
 
-.order-container .product-card {
+.order .product-card {
   margin: 5px; }
+
+.order-btn {
+  width: 100%;
+  padding: 12px; }
 
 .total {
   font-weight: 700; }
@@ -270,8 +275,6 @@ h5 {
   display: flex;
   justify-content: center;
   align-items: center; }
-  .close-btn .btn {
-    width: 100px; }
   .close-btn a {
     text-decoration: none;
     color: black;
@@ -334,7 +337,9 @@ button .product-card {
 /* MEDIA QUERIES */
 @media only screen and (min-width: 768px) {
   .grid-products {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); }
+  .checkout form {
+    width: 70%; } }
 
 @media only screen and (min-width: 1024px) {
   header {
@@ -357,15 +362,17 @@ button .product-card {
     margin: 0 auto;
     display: flex;
     flex-direction: column; }
-  .order-container {
+  .order {
     grid-column-gap: 30px; }
+  .order-btn {
+    width: auto; }
   .grid-products {
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 0px;
     padding-bottom: 25px; }
     .grid-products h4 {
       font-size: 0.85rem; }
-  .order-container .product-card {
+  .order .product-card {
     padding: 0; }
   .product-card {
     padding: 5px 5px; }
@@ -387,8 +394,6 @@ button .product-card {
     font-size: 1rem;
     padding: 17px;
     margin-top: 20px; }
-  .checkout form {
-    width: 70%; }
   .thanks-page {
     padding: 170px 10px; }
   footer#contact {
