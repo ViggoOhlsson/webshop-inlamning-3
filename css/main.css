@@ -308,7 +308,9 @@ h5 {
   padding-bottom: 25px;
   font-size: 30px; }
 
-.btn-primary:hover {
+.btn.btn-primary:hover,
+.btn.btn-secondary:hover
+.btn.btn-danger:hover {
   opacity: 0.9;
   background-color: #FF6B6B;
   color: black; }
