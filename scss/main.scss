@@ -523,6 +523,9 @@ footer#contact {
     display: flex;
     flex-direction: row;
     gap: 10px;
+    #age {
+      width: 20%;
+    }
   }
   img {
     height: auto;
