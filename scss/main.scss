@@ -274,17 +274,17 @@ h5 {
 
 /* THANK YOU PAGE */
 
-.tack-sidan {
+.thanks-page {
   display: flex;
   flex-direction: column;
   color: black;
   padding: 90px 10px;
 
-  .tack {
+  .thanks {
     display: flex;
     justify-content: center;
 
-    .tack-köp {
+    .thanks-kop {
       color: #4ecdc4;
       font-weight: bolder;
       font-size: 30px;
@@ -309,13 +309,13 @@ h5 {
   color: #4ecdc4;
 }
 
-.genomfört-köp {
+.completed-purchase {
   display: flex;
   justify-content: center;
   padding: 10px;
 }
 
-.genomfört-köp h4 {
+.completed-purchase h4 {
   color: black;
   font-size: 1em;
 }
@@ -339,7 +339,7 @@ h5 {
   }
 }
 
-.stäng-knapp {
+.close-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -365,7 +365,7 @@ h5 {
     padding-top: 10px;
   }
 
-  .följ-oss {
+  .follow-us {
     display: grid;
     justify-content: center;
 
@@ -386,7 +386,7 @@ h5 {
     padding-top: 10px;
   }
 
-  .följ-oss {
+  .follow-us {
     display: grid;
     justify-content: center;
 
@@ -499,13 +499,13 @@ h5 {
       padding-top: 10px;
     }
 
-    .stäng-knapp .btn {
+    .close-btn .btn {
       width: 120px;
     }
   }
 }
 //modal
-#btn-köp {
+#btn-buy {
   background: none;
   border: none;
 }
