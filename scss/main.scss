@@ -166,7 +166,6 @@ figure {
   }
 }
 
-
 .product-card h4,
 h5 {
   margin: 2px;
@@ -413,26 +412,25 @@ h5 {
   font-size: 30px;
 }
 
+.endfooter {
+  background-color: #4ecdc4;
+}
 .btn.btn-primary:hover,
-.btn.btn-secondary:hover
-.btn.btn-danger:hover {
+.btn.btn-secondary:hover .btn.btn-danger:hover {
   opacity: 0.9;
   background-color: $color-salmon;
   color: black;
-  
 }
 
 .modal-btn:hover {
   opacity: 0.9;
   background-color: $color-salmon;
   color: black;
-  
 }
 
 button .product-card {
   text-align: left;
 }
-
 
 /* MEDIA QUERIES */
 
