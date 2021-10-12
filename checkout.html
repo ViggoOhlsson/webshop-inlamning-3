@@ -70,32 +70,31 @@
                             </p>
                             <hr>
                             <p>399 kr</p>
-                            <form>
-                              <div class="form-group">
-                                <label for="exampleInputEmail1"></label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            <form action="tack.html" method="get">
+                              <div class="form-group mb-2">
+                                <label for="exampleInputEmail1">Förnamn & Efternamn</label>
+                                <input type="text" name="username" required class="form-control" placeholder="Anna Karlsson">
                               </div>
-                              <div class="form-group">
-                                <label for="exampleInputPassword1">Password</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                              <div class="form-group mb-2">
+                                <label for="exampleInputEmail1">Email Adress</label>
+                                <input type="email" name="useremail" required class="form-control" placeholder="exempel@domän.se">
                               </div>
-                              <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                              <div class="form-group mb-2">
+                                <label for="exampleInputEmail1">Adress</label>
+                                <input type="text" name="address" required class="form-control" placeholder="Platshållargatan 123">
                               </div>
-                              <button type="submit" class="btn btn-primary">Submit</button>
+                              <button type="submit" class="btn btn-primary mb-2">Submit</button>
+                              <p>Totalt belopp inklusive moms: <span class="total">399 kr</span></p>
                             </form>
                 </div>
             </div>
-            <div class="checkout">
-                <p>Totalt belopp inklusive moms: <span class="total">399 kr</span></p>
+            <!-- <div class="checkout">
                 <a href="tack.html">
                     <div class="btn">
                         Lägg order
                     </div>
                 </a>
-            </div>
+            </div> -->
     </main>
    
  
