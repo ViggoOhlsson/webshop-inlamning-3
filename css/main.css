@@ -368,4 +368,20 @@ h5 {
 
 #btn-buy {
   background: none;
-  border: none; }
+  border: none;
+  padding: 0;
+  margin: 0; }
+
+.modal-body .modal-main {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px; }
+
+.modal-body img {
+  height: auto;
+  max-width: 100%;
+  display: block; }
+
+.clothes-size {
+  color: black; }

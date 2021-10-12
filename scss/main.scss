@@ -359,152 +359,171 @@ h5 {
   }
 }
 
-  /* FOOTER */
+/* FOOTER */
 
-  .footer-p {
-    padding-top: 10px;
+.footer-p {
+  padding-top: 10px;
+}
+
+.follow-us {
+  display: grid;
+  justify-content: center;
+
+  h4 {
+    font-size: 20px;
+  }
+}
+
+.social-p {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 25px;
+  font-size: 30px;
+}
+
+.footer-p {
+  padding-top: 10px;
+}
+
+.follow-us {
+  display: grid;
+  justify-content: center;
+
+  h4 {
+    font-size: 20px;
+  }
+}
+
+.social-p {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 25px;
+  font-size: 30px;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 768px) {
+  .grid-products {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  header {
+    width: 100%;
+    position: fixed;
   }
 
-  .follow-us {
-    display: grid;
-    justify-content: center;
-
-    h4 {
-      font-size: 20px;
-    }
+  .menu-button {
+    display: none;
   }
 
-  .social-p {
-    display: flex;
+  .header-dropdown {
+    visibility: visible;
     flex-direction: row;
     justify-content: center;
+  }
+
+  .grid-container {
+    padding: 50px 80px;
+    width: 80%;
+    align-self: center;
+  }
+
+  .checkout-container {
+    padding-top: 170px;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .order-container {
+    grid-column-gap: 30px;
+  }
+
+  .grid-products {
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 0px;
     padding-bottom: 25px;
-    font-size: 30px;
-  }
-
-  .footer-p {
-    padding-top: 10px;
-  }
-
-  .follow-us {
-    display: grid;
-    justify-content: center;
 
     h4 {
-      font-size: 20px;
-    }
-  }
-
-  .social-p {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-bottom: 25px;
-    font-size: 30px;
-  }
-
-  /* MEDIA QUERIES */
-
-  @media only screen and (min-width: 768px) {
-    .grid-products {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-
-  @media only screen and (min-width: 1024px) {
-    header {
-      width: 100%;
-      position: fixed;
-    }
-
-    .menu-button {
-      display: none;
-    }
-
-    .header-dropdown {
-      visibility: visible;
-      flex-direction: row;
-      justify-content: center;
-    }
-
-    .grid-container {
-      padding: 50px 80px;
-      width: 80%;
-      align-self: center;
-    }
-
-    .checkout-container {
-      padding-top: 170px;
-      width: 80%;
-      margin: 0 auto;
-    }
-
-    .order-container {
-      grid-column-gap: 30px;
-    }
-
-    .grid-products {
-      grid-template-columns: repeat(4, 1fr);
-      grid-column-gap: 0px;
-      padding-bottom: 25px;
-
-      h4 {
-        font-size: 1rem;
-      }
-    }
-
-    .order-container .product-card {
-      padding: 0;
-    }
-
-    .product-card {
-      padding: 5px 5px;
-    }
-
-    .hero {
-      height: 100vh;
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-
-      .hero-text h2,
-      .hero-text p {
-        margin: 15px;
-      }
-    }
-
-    .hero-text h2 {
-      font-size: 3.3rem;
-
-      .hero-text p {
-        font-size: 1.2rem;
-      }
-    }
-
-    .hero-text {
-      padding-top: 200px;
-    }
-
-    .btn {
       font-size: 1rem;
-      padding: 17px;
-      margin-top: 20px;
-    }
-
-    .tack-sidan {
-      padding-top: 200px;
-    }
-
-    footer#contact {
-      padding-top: 10px;
-    }
-
-    .close-btn .btn {
-      width: 120px;
     }
   }
+
+  .order-container .product-card {
+    padding: 0;
+  }
+
+  .product-card {
+    padding: 5px 5px;
+  }
+
+  .hero {
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    .hero-text h2,
+    .hero-text p {
+      margin: 15px;
+    }
+  }
+
+  .hero-text h2 {
+    font-size: 3.3rem;
+
+    .hero-text p {
+      font-size: 1.2rem;
+    }
+  }
+
+  .hero-text {
+    padding-top: 200px;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 17px;
+    margin-top: 20px;
+  }
+
+  .tack-sidan {
+    padding-top: 200px;
+  }
+
+  footer#contact {
+    padding-top: 10px;
+  }
+
+  .close-btn .btn {
+    width: 120px;
+  }
+}
 //modal
 #btn-buy {
   background: none;
   border: none;
+  padding: 0;
+  margin: 0;
+}
+.modal-body {
+  .modal-main {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  img {
+    height: auto;
+    max-width: 100%;
+    display: block;
+  }
+}
+
+.clothes-size {
+  color: black;
 }
