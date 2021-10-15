@@ -259,15 +259,19 @@ h5 {
   color: black;
   font-size: 1em; }
 
-.order {
+.order.receipt {
+  grid-template-columns: repeat(1, 1fr);
+  padding: 40px 20px; }
+
+.order .receipt {
   padding-top: 30px; }
-  .order .text {
+  .order .receipt .text {
     color: black; }
-  .order .text-fet {
+  .order .receipt .text-fet {
     color: rgba(0, 0, 0, 0.406);
     font-weight: 900;
     font-size: 18px; }
-  .order .order-border {
+  .order .receipt .order-border {
     border-top: 2px solid #292F36; }
 
 .close-btn {

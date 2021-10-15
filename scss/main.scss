@@ -335,7 +335,13 @@ h5 {
   font-size: 1em;
 }
 
-.order {
+.order.receipt {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 40px 20px;
+  }
+  
+
+.order .receipt {
   padding-top: 30px;
  
 
